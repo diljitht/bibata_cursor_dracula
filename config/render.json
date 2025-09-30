@@ -36,13 +36,21 @@
 			{ "match": "#FF0000", "replace": "#000000" }
 		]
 	},
-
+	"Bibata-Modern-Dracula": {
+		"desc": "rounded edge and black Bibata cursors",
+		"dir": "svg/modern",
+		"colors": [
+			{ "match": "#00FF00", "replace": "#282A36" },
+			{ "match": "#0000FF", "replace": "#FFFFFF" },
+			{ "match": "#FF0000", "replace": "#282A36" }
+		]
+	},
 	"Bibata-Modern-Ice": {
 		"desc": "rounded edge and white Bibata cursors",
 		"dir": "svg/modern",
 		"colors": [
 			{ "match": "#00FF00", "replace": "#FFFFFF" },
-			{ "match": "#0000FF", "replace": "#000000" },
+			{ "match": "#0000FF", "replace": "#BD93F9" },
 			{ "match": "#FF0000", "replace": "#FFFFFF" }
 		]
 	},
