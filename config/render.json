@@ -41,7 +41,7 @@
 		"dir": "svg/modern",
 		"colors": [
 			{ "match": "#00FF00", "replace": "#282A36" },
-			{ "match": "#0000FF", "replace": "#FFFFFF" },
+			{ "match": "#0000FF", "replace": "#BD93F9" },
 			{ "match": "#FF0000", "replace": "#282A36" }
 		]
 	},
