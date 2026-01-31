@@ -40,9 +40,21 @@
 		"desc": "rounded edge and black Bibata cursors",
 		"dir": "svg/modern",
 		"colors": [
-			{ "match": "#00FF00", "replace": "#282A36" },
-			{ "match": "#0000FF", "replace": "#BD93F9" },
-			{ "match": "#FF0000", "replace": "#282A36" }
+		{ "match": "#0000FF, "replace": #282A26" },
+		{ "match": "#00FF00, "replace": #BD93F9" },
+		{ "match": "#FE0000, "replace": #FF5555" },
+    { "match": "#5F3BE4, "replace": #FF79C6" },
+    { "match": "#06B231, "replace": #50FA7B" },
+    { "match": "#606060, "replace": #6272A4" },
+    { "match": "#2C2C2C, "replace": #44475A" },
+    { "match": "#0A6857, "replace": #50FA7B" },
+    { "match": "#179DD8, "replace": #8BE9FD" },
+    { "match": "#FF0000, "replace": #FF5555" },
+    { "match": "#F05024, "replace": #FFB86C" },
+    { "match": "#FCB813, "replace": #F1FA8C" },
+    { "match": "#7EBA41, "replace": #50FA7B" },
+    { "match": "#32A0DA, "replace": #8BE9FD" },
+    { "match":   "white, "replace": #F8F8F2" }
 		]
 	},
 	"Bibata-Modern-Ice": {
