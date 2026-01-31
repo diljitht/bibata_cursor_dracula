@@ -2,7 +2,7 @@
 
 image:https://img.shields.io/badge/license-GPLv3-green.svg?style=flat[license]
 
-A dracula-themed cursor set forked from https://github.com/rtgiskard/bibata_cursor[rtgiskard/bibata_cursor],
+A https://github.com/dracula/dracula-theme[dracula]-themed cursor set forked from https://github.com/rtgiskard/bibata_cursor[rtgiskard/bibata_cursor],
 which is based on the original https://github.com/ful1e5/Bibata_Cursor[Bibata_Cursor] project.
 This theme is specially adapted for the dracula color scheme and provides cursors for both
 hyprcursor and Xcursor environments with the iconic dark background and purple accents.
