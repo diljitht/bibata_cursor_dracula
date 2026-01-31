@@ -1,135 +1,135 @@
 {
-	"Bibata-Modern-Amber": {
-		"desc": "rounded edge and yellowish Bibata cursors",
-		"dir": "svg/modern",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#FF8400" },
-			{ "match": "#0000FF", "replace": "#FFFFFF" },
-			{ "match": "#FF0000", "replace": "#001624" }
-		]
-	},
-	"Bibata-Modern-Amber-Right": {
-		"desc": "rounded edge and yellowish right-hand Bibata cursors",
-		"dir": "svg/modern-right",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#FF8400" },
-			{ "match": "#0000FF", "replace": "#FFFFFF" },
-			{ "match": "#FF0000", "replace": "#001624" }
-		]
-	},
+  "Bibata-Modern-Amber": {
+    "desc": "rounded edge and yellowish Bibata cursors",
+    "dir": "svg/modern",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FF8400" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#001624" }
+    ]
+  },
+  "Bibata-Modern-Amber-Right": {
+    "desc": "rounded edge and yellowish right-hand Bibata cursors",
+    "dir": "svg/modern-right",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FF8400" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#001624" }
+    ]
+  },
 
-	"Bibata-Modern-Classic": {
-		"desc": "rounded edge and black Bibata cursors",
-		"dir": "svg/modern",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#000000" },
-			{ "match": "#0000FF", "replace": "#FFFFFF" },
-			{ "match": "#FF0000", "replace": "#000000" }
-		]
-	},
-	"Bibata-Modern-Classic-Right": {
-		"desc": "rounded edge and black right-hand Bibata cursors",
-		"dir": "svg/modern-right",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#000000" },
-			{ "match": "#0000FF", "replace": "#FFFFFF" },
-			{ "match": "#FF0000", "replace": "#000000" }
-		]
-	},
-	"Bibata-Modern-Dracula": {
-		"desc": "rounded edge and black Bibata cursors",
-		"dir": "svg/modern",
-		"colors": [
-  		{ "match": "#0000FF", "replace": "#282A26" }",
-  		{ "match": "#00FF00", "replace": "#BD93F9" }",
-  		{ "match": "#FE0000", "replace": "#FF5555" }",
-      { "match": "#5F3BE4", "replace": "#FF79C6" }",
-      { "match": "#06B231", "replace": "#50FA7B" }",
-      { "match": "#606060", "replace": "#6272A4" }",
-      { "match": "#2C2C2C", "replace": "#44475A" }",
-      { "match": "#0A6857", "replace": "#50FA7B" }",
-      { "match": "#179DD8", "replace": "#8BE9FD" }",
-      { "match": "#FF0000", "replace": "#FF5555" }",
-      { "match": "#F05024", "replace": "#FFB86C" }",
-      { "match": "#FCB813", "replace": "#F1FA8C" }",
-      { "match": "#7EBA41", "replace": "#50FA7B" }",
-      { "match": "#32A0DA", "replace": "#8BE9FD" }",
-      { "match":   "white", "replace": "#F8F8F2" }
-		]
-	},
-	"Bibata-Modern-Ice": {
-		"desc": "rounded edge and white Bibata cursors",
-		"dir": "svg/modern",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#FFFFFF" },
-			{ "match": "#0000FF", "replace": "#BD93F9" },
-			{ "match": "#FF0000", "replace": "#FFFFFF" }
-		]
-	},
-	"Bibata-Modern-Ice-Right": {
-		"desc": "rounded edge and white right-hand Bibata cursors",
-		"dir": "svg/modern-right",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#FFFFFF" },
-			{ "match": "#0000FF", "replace": "#000000" },
-			{ "match": "#FF0000", "replace": "#FFFFFF" }
-		]
-	},
+  "Bibata-Modern-Classic": {
+    "desc": "rounded edge and black Bibata cursors",
+    "dir": "svg/modern",
+    "colors": [
+      { "match": "#00FF00", "replace": "#000000" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#000000" }
+    ]
+  },
+  "Bibata-Modern-Classic-Right": {
+    "desc": "rounded edge and black right-hand Bibata cursors",
+    "dir": "svg/modern-right",
+    "colors": [
+      { "match": "#00FF00", "replace": "#000000" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#000000" }
+    ]
+  },
+  "Bibata-Modern-Dracula": {
+    "desc": "rounded edge and black Bibata cursors",
+    "dir": "svg/modern",
+    "colors": [
+      { "match": "#0000FF", "replace": "#282A26" },
+      { "match": "#00FF00", "replace": "#BD93F9" },
+      { "match": "#FE0000", "replace": "#FF5555" },
+      { "match": "#5F3BE4", "replace": "#FF79C6" },
+      { "match": "#06B231", "replace": "#50FA7B" },
+      { "match": "#606060", "replace": "#6272A4" },
+      { "match": "#2C2C2C", "replace": "#44475A" },
+      { "match": "#0A6857", "replace": "#50FA7B" },
+      { "match": "#179DD8", "replace": "#8BE9FD" },
+      { "match": "#FF0000", "replace": "#FF5555" },
+      { "match": "#F05024", "replace": "#FFB86C" },
+      { "match": "#FCB813", "replace": "#F1FA8C" },
+      { "match": "#7EBA41", "replace": "#50FA7B" },
+      { "match": "#32A0DA", "replace": "#8BE9FD" },
+      { "match": "white", "replace": "#F8F8F2" }
+    ]
+  },
+  "Bibata-Modern-Ice": {
+    "desc": "rounded edge and white Bibata cursors",
+    "dir": "svg/modern",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FFFFFF" },
+      { "match": "#0000FF", "replace": "#BD93F9" },
+      { "match": "#FF0000", "replace": "#FFFFFF" }
+    ]
+  },
+  "Bibata-Modern-Ice-Right": {
+    "desc": "rounded edge and white right-hand Bibata cursors",
+    "dir": "svg/modern-right",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FFFFFF" },
+      { "match": "#0000FF", "replace": "#000000" },
+      { "match": "#FF0000", "replace": "#FFFFFF" }
+    ]
+  },
 
-	"Bibata-Original-Amber": {
-		"desc": "sharp edge and yellowish Bibata cursors",
-		"dir": "svg/original",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#FF8400" },
-			{ "match": "#0000FF", "replace": "#FFFFFF" },
-			{ "match": "#FF0000", "replace": "#001624" }
-		]
-	},
-	"Bibata-Original-Amber-Right": {
-		"desc": "sharp edge and yellowish right-hand Bibata cursors",
-		"dir": "svg/original-right",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#FF8400" },
-			{ "match": "#0000FF", "replace": "#FFFFFF" },
-			{ "match": "#FF0000", "replace": "#001624" }
-		]
-	},
+  "Bibata-Original-Amber": {
+    "desc": "sharp edge and yellowish Bibata cursors",
+    "dir": "svg/original",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FF8400" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#001624" }
+    ]
+  },
+  "Bibata-Original-Amber-Right": {
+    "desc": "sharp edge and yellowish right-hand Bibata cursors",
+    "dir": "svg/original-right",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FF8400" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#001624" }
+    ]
+  },
 
-	"Bibata-Original-Classic": {
-		"desc": "sharp edge and black Bibata cursors",
-		"dir": "svg/original",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#000000" },
-			{ "match": "#0000FF", "replace": "#FFFFFF" },
-			{ "match": "#FF0000", "replace": "#000000" }
-		]
-	},
-	"Bibata-Original-Classic-Right": {
-		"desc": "sharp edge and black right-hand Bibata cursors",
-		"dir": "svg/original-right",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#000000" },
-			{ "match": "#0000FF", "replace": "#FFFFFF" },
-			{ "match": "#FF0000", "replace": "#000000" }
-		]
-	},
+  "Bibata-Original-Classic": {
+    "desc": "sharp edge and black Bibata cursors",
+    "dir": "svg/original",
+    "colors": [
+      { "match": "#00FF00", "replace": "#000000" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#000000" }
+    ]
+  },
+  "Bibata-Original-Classic-Right": {
+    "desc": "sharp edge and black right-hand Bibata cursors",
+    "dir": "svg/original-right",
+    "colors": [
+      { "match": "#00FF00", "replace": "#000000" },
+      { "match": "#0000FF", "replace": "#FFFFFF" },
+      { "match": "#FF0000", "replace": "#000000" }
+    ]
+  },
 
-	"Bibata-Original-Ice": {
-		"desc": "sharp edge and white Bibata cursors",
-		"dir": "svg/original",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#FFFFFF" },
-			{ "match": "#0000FF", "replace": "#000000" },
-			{ "match": "#FF0000", "replace": "#FFFFFF" }
-		]
-	},
-	"Bibata-Original-Ice-Right": {
-		"desc": "sharp edge and white right-hand Bibata cursors",
-		"dir": "svg/original-right",
-		"colors": [
-			{ "match": "#00FF00", "replace": "#FFFFFF" },
-			{ "match": "#0000FF", "replace": "#000000" },
-			{ "match": "#FF0000", "replace": "#FFFFFF" }
-		]
-	}
+  "Bibata-Original-Ice": {
+    "desc": "sharp edge and white Bibata cursors",
+    "dir": "svg/original",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FFFFFF" },
+      { "match": "#0000FF", "replace": "#000000" },
+      { "match": "#FF0000", "replace": "#FFFFFF" }
+    ]
+  },
+  "Bibata-Original-Ice-Right": {
+    "desc": "sharp edge and white right-hand Bibata cursors",
+    "dir": "svg/original-right",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FFFFFF" },
+      { "match": "#0000FF", "replace": "#000000" },
+      { "match": "#FF0000", "replace": "#FFFFFF" }
+    ]
+  }
 }
