@@ -354,9 +354,6 @@ class CursorBuilder:
         with Path('./config/build.toml').open('rb') as f:
             self.config = tomllib.load(f)
 
-        with Path('./config/build.right.toml').open('rb') as f:
-            self.config_right = tomllib.load(f)
-
         with Path('./svg/symlink.toml').open('rb') as f:
             self.res_symlink = tomllib.load(f)
 
