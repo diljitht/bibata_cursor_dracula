@@ -17,7 +17,7 @@ from pathlib import Path
 logger = logging.getLogger()
 
 DEFAULT_THEMES = [
-    'Bibata-Modern-Dracula'
+    'dracula-cursor-theme'
 ]
 
 XCURSOR_LINK_MAP = {

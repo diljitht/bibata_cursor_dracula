@@ -1,6 +1,6 @@
 [project]
-name = "bibata"
-description = "bibata cursors"
+name = "dracula-cursor-theme"
+description = "A cursor theme for hyprcursor and xcursor based on dracula color scheme."
 version = "1.0.0"
 requires-python = ">=3.12"
 dependencies = []

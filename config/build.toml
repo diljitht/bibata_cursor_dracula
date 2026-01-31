@@ -1,7 +1,7 @@
 [theme]
-name = 'Bibata Cursor'
-comment = 'Bibata is open source, compact, and material designed cursor set.'
-website = 'https://www.bibata.live'
+name = 'Dracula Cursor Theme'
+comment = 'A cursor theme for hyprcursor and xcursor based on dracula color scheme.'
+website = 'https://github.com/diljitht/bibata_cursor_dracula.git'
 
 [cursor_defaults]
 x11_sizes = [16, 20, 22, 24, 28, 32, 48, 64, 72, 84, 96]
