@@ -21,10 +21,9 @@ hyprcursor and Xcursor environments with the iconic dark background and purple a
 ```bash
 # 1. install the dependencies
 # Arch Linux:  pacman -Syu python librsvg xorg-xcursorgen
-# Fedora: dnf install librsvg2-tools xcursorgen
 
 # 2. clone
-git clone https://github.com/diljitht/bibata_cursor_dracula.git
+git clone https://github.com/diljitht/dracula_cursor_dracula.git
 
 # 3. build
 cd bibata_cursor_dracula
