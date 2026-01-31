@@ -1,5 +1,5 @@
 [project]
-name = "dracula-cursor-theme"
+name = "Dracula Cursor Theme"
 description = "A cursor theme for hyprcursor and xcursor based on dracula color scheme."
 version = "1.0.0"
 requires-python = ">=3.12"

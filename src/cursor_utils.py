@@ -16,20 +16,9 @@ from pathlib import Path
 
 logger = logging.getLogger()
 
-DEFAULT_THEMES = [
-    'dracula-cursor-theme'
-]
+THEME_NAME = 'dracula-cursor-theme'
 
 XCURSOR_LINK_MAP = {
-    'none': [],
-    'all': [],
-    'spec': [
-        'alias', 'all-scroll', 'cell', 'col-resize', 'context-menu', 'copy', 'crosshair',
-        'default', 'default', 'e-resize', 'ew-resize', 'help', 'n-resize', 'ne-resize',
-        'nesw-resize', 'no-drop', 'not-allowed', 'ns-resize', 'nw-resize', 'nwse-resize',
-        'pointer', 'progress', 'row-resize', 's-resize', 'se-resize', 'sw-resize', 'text',
-        'up-arrow', 'vertical-text', 'w-resize', 'wait'
-    ],
     'adwaita': [
         'alias', 'all-scroll', 'arrow', 'bd_double_arrow', 'bottom_left_corner',
         'bottom_right_corner', 'bottom_side', 'cell', 'col-resize', 'context-menu', 'copy',
@@ -310,12 +299,10 @@ class CursorMeta:
 class CursorBuilder:
     res_symlink: dict[str, list]  # resource symlink map
     theme: dict[str, dict]  # cursor theme, color map
-    config: dict[str, dict]  # left cursor
-    config_right: dict[str, dict]  # right cursor
+    config: dict[str, dict]  # cursor config
 
     doSetup: bool = True
-    renderList: list[str] = DEFAULT_THEMES
-    x11Symlink: str = 'none'
+    x11Symlink: str = 'adwaita'
     outDir: str = 'out'
 
     def __init__(self):
@@ -337,9 +324,6 @@ class CursorBuilder:
             choices=XCURSOR_LINK_MAP.keys(),
             default='adwaita',
         )
-        parser.add_argument(
-            '--theme', help='which theme to build, ref: `render.json`', default=''
-        )
         parser.add_argument('--out-dir', help='output dir', default='./out')
         parser.add_argument(
             '--log-level',
@@ -360,28 +344,21 @@ class CursorBuilder:
         with Path('./config/render.json').open('rb') as f:
             self.theme = json.load(f)
 
-    def get_cursor_config(self, *, right: bool = False) -> tuple[dict, dict]:
-        config = self.config_right if right else self.config
-        return (config['cursors'], config['cursor_defaults'])
+    def get_cursor_config(self) -> tuple[dict, dict]:
+        return (self.config['cursors'], self.config['cursor_defaults'])
 
     def get_renders(self) -> Iterable[CursorRender]:
-        for name in self.renderList:
-            if name not in self.theme:
-                continue
+        spec = self.theme[THEME_NAME]
+        res_dir = f'{self.outDir}/{spec["dir"]}'
 
-            spec = self.theme[name]
-            res_dir = f'{self.outDir}/{spec["dir"]}'
+        if not Path(res_dir).exists():
+            dir_name = spec['dir'].split('/')[-1]
+            Utils.gen_res_symlinks(res_dir, self.res_symlink[dir_name], src_prefix='svg/')
 
-            if not Path(res_dir).exists():
-                dir_name = spec['dir'].split('/')[-1]
-                Utils.gen_res_symlinks(res_dir, self.res_symlink[dir_name], src_prefix='svg/')
-
-            yield CursorRender(name, spec['desc'], res_dir, spec['colors'])
+        yield CursorRender(THEME_NAME, spec['desc'], res_dir, spec['colors'])
 
     def get_cursors(self, render: CursorRender, fmt: str = 'hypr') -> Iterable[CursorMeta]:
-        cursor_configs, fallback = self.get_cursor_config(
-            right=render.name.endswith('-Right')
-        )
+        cursor_configs, fallback = self.get_cursor_config()
 
         if 'x11_name' in fallback:
             logger.warning('fallback has x11_name: {}'.format(fallback.pop('x11_name')))
@@ -448,9 +425,6 @@ class CursorBuilder:
         if Path(self.outDir).exists():
             logger.error(f'output dir `{self.outDir}` already exist, abort')
             return
-
-        if args.theme:
-            self.renderList = [args.theme]
 
         if not args.hypr and not args.x11:
             logger.error('requre at least one of `hypr` or `x11`')
